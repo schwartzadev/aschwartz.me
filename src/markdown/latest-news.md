@@ -2,9 +2,14 @@
 slug: 'latest-news'
 ---
 
+### April, 2021
+
+I'm joining [Batch](https://getbatch.com), a seed stage startup, to work on super fast
+product re-ordering infrastructure.
+
 ### March, 2021
-The COVID Tracking Project is [wrapping up](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7).
-As the project winds down, I'll be working on engineering at a stealth startup.
+The COVID Tracking Project is [wrapping up](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7)
+and I'm transitioning to another part-time gig.
 
 
 ### January, 2021
@@ -38,3 +43,4 @@ information infrastructure in [Eleventy](https://www.11ty.dev/) and
 [Gatsby](https://www.gatsbyjs.org) while focusing on accessibility.
 - I also joined LinkedIn – feel free to
 [connect with me](https://www.linkedin.com/in/andrewtschwartz/)!
+
