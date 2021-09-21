@@ -6,8 +6,7 @@ slug: 'skills'
 
 - [React](https://reactjs.org/) or [Gatsby](https://gatsbyjs.org) for front-end
 website development
-- Python, [Django](https://www.djangoproject.com/), and Django Rest Framework for
-full-stack website development
+- [Ruby on Rails](https://rubyonrails.org/) for API and backend development
 - [Inkscape](https://inkscape.org/) or [Figma](https://www.figma.com/) for mockups and wireframes
 
 ### I am confident with:
