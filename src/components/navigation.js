@@ -4,7 +4,7 @@ import Logo from './logo'
 import NaviagationItems from '../../content/navigation.yaml'
 import NaviagationStyles from './navigation.module.scss'
 
-export default ({ homepage = false }) => (
+export default () => (
   <div className={NaviagationStyles.wrapper} id="nav">
     <div className={NaviagationStyles.logoContainer}>
       <Link to='/'>
