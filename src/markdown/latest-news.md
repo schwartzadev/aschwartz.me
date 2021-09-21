@@ -2,10 +2,14 @@
 slug: 'latest-news'
 ---
 
+### August, 2021
+I am starting as a [Github Campus Expert](https://githubcampus.expert/) at CU Boulder, connecting
+tech organizations on campus and planning workshops later in the semester.
+
 ### April, 2021
 
 I'm joining [Batch](https://getbatch.com), a seed stage startup, to work on super fast
-product re-ordering infrastructure.
+e-commerce re-ordering infrastructure.
 
 ### March, 2021
 The COVID Tracking Project is [wrapping up](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7)
@@ -22,7 +26,7 @@ session with two of the [The COVID Tracking Project](https://covidtracking.com/)
 ### August, 2020
 I am joining [Professor Robin Burke](https://www.colorado.edu/cmci/people/college-leadership/robin-burke)
 and [That Recommender Systems Lab](http://www.that-recsys-lab.net/) to assist
-with research on multistakeholder recommender systems and concepts of fairness
+with research on multi-stakeholder recommender systems and concepts of fairness
 within recommender systems.
 
 ### May, 2020
