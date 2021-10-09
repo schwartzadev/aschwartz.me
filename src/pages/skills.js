@@ -9,7 +9,7 @@ import Section from '../components/section'
 
 export default ({ data }) => {
   const ledeContent = (
-    <>I am a capable programmer and an aspiring designer. Here’s what I do.</>
+    <>I am a full stack software engineer and an aspiring designer. Here’s what I do.</>
   )
   return (
     <Layout title="Skills">
