@@ -40,7 +40,7 @@ export default ({ data }) => {
                 </em>{' '}
                 by {book.author}
               </td>
-              <td>{moment(book.finished).format('MMM YYYY')}</td>
+              <td>{moment(book.finished, 'MM-DD-YYYY').format('MMM YYYY')}</td>
               <td>
                 <Stars count={book.stars} />
               </td>

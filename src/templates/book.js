@@ -18,7 +18,7 @@ export default ({ data, pageContext }) => {
       <h2 style={{ paddingTop: '1rem', fontStyle: 'italic' }}>{book.title}</h2>
       <p>
         Book by {book.author} &bull; Reviewed{' '}
-        {moment(book.finished).format('MMM YYYY')}{' '}
+        {moment(book.finished, 'MM-DD-YYYY').format('MMM YYYY')}{' '}
       </p>
       <p>{book.review}</p>
       <p>
