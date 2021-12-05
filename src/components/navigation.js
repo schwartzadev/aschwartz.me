@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Logo from './logo'
-import NaviagationItems from '../../content/navigation.yaml'
+import NaviagationItems from '../../content/core.yaml'
 import NaviagationStyles from './navigation.module.scss'
 
 export default () => (
   <div className={NaviagationStyles.wrapper} id="nav">
     <div className={NaviagationStyles.logoContainer}>
-      <Link to='/'>
+      <Link to="/">
         <Logo isNav />
       </Link>
     </div>

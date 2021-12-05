@@ -11,7 +11,8 @@ li,
 h3,
 h4,
 h5,
-h6 {
+h6,
+td {
   font-family: $sans-serif;
   line-height: 160%;
 }
@@ -29,7 +30,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+td {
   color: $color-text;
 }
 

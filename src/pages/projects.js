@@ -4,9 +4,7 @@ import { graphql } from 'gatsby'
 import ListPage from '../components/list-page'
 
 export default ({ data }) => {
-  const projects = data.allContentYaml.nodes.find(
-    list => list.projects !== null
-  ).projects
+  const projects = data.allContentYaml.nodes[0].projects
 
   const ledeContent = <>Explore what I’ve been working on.</>
 
