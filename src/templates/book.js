@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import moment from 'moment'
 
 import Layout from '../components/layout'
+import Stars from '../components/stars'
 import Header from '../components/layout/header'
 
 export default ({ data, pageContext }) => {
@@ -20,7 +21,9 @@ export default ({ data, pageContext }) => {
         {moment(book.finished).format('MMM YYYY')}{' '}
       </p>
       <p>{book.review}</p>
-      <p>{book.stars} stars.</p>
+      <p>
+        <Stars count={book.stars} />
+      </p>
       <span>
         ← <Link to="/books">Back to all books</Link>
       </span>

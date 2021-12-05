@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby'
 import moment from 'moment'
 
 import Layout from '../components/layout'
+import Stars from '../components/stars'
 import Table from '../components/table'
 import Header from '../components/layout/header'
 import Lede from '../components/lede'
@@ -40,8 +41,9 @@ export default ({ data }) => {
                 by {book.author}
               </td>
               <td>{moment(book.finished).format('MMM YYYY')}</td>
-              <td>{book.stars} stars</td>
-              {/* TODO: make this nicer UI */}
+              <td>
+                <Stars count={book.stars} />
+              </td>
             </tr>
           ))}
         </tbody>
