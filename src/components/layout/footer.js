@@ -1,10 +1,10 @@
 import React from 'react'
-import FooterStyles from './footer.module.scss'
+import { container, contactList, comments } from './footer.module.scss'
 
 export default () => (
-  <footer className={FooterStyles.container}>
+  <footer className={container}>
     <h2>Contact me</h2>
-    <ul className={FooterStyles.contactList}>
+    <ul className={contactList}>
       <li>
         <a href="https://www.linkedin.com/in/andrewtschwartz/">LinkedIn</a>
       </li>
@@ -15,7 +15,7 @@ export default () => (
         <a href="https://github.com/schwartzadev/">GitHub</a>
       </li>
     </ul>
-    <div className={FooterStyles.comments}>
+    <div className={comments}>
       <p>
         Source & hosting on{' '}
         <a href="https://github.com/schwartzadev/aschwartz.me">GitHub</a>

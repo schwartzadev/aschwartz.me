@@ -7,22 +7,20 @@ import Stars from '../components/stars'
 import Header from '../components/layout/header'
 
 export default ({ data, pageContext }) => {
-  // FIXME: don't use allContentYaml
-  const book = data.allContentYaml.nodes[0].books.find(
-    book => book.slug === pageContext.slug
-  )
+  const bookData = data.airtable.data
 
   return (
     <Layout title="Books">
       <Header />
-      <h2 style={{ paddingTop: '1rem', fontStyle: 'italic' }}>{book.title}</h2>
+      <h2 style={{ paddingTop: '1rem', fontStyle: 'italic' }}>
+        {bookData.Title}
+      </h2>
       <p>
-        Book by {book.author} &bull; Reviewed{' '}
-        {moment(book.finished, 'MM-DD-YYYY').format('MMM YYYY')}{' '}
+        Book by {bookData.Author} &bull; Reviewed {bookData.Date_Finished}{' '}
       </p>
-      <p>{book.review}</p>
+      <p>{bookData.Review}</p>
       <p>
-        <Stars count={book.stars} />
+        <Stars count={bookData.Rating} />
       </p>
       <span>
         ← <Link to="/books">Back to all books</Link>
@@ -33,16 +31,14 @@ export default ({ data, pageContext }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    allContentYaml(filter: { books: { elemMatch: { slug: { eq: $slug } } } }) {
-      nodes {
-        books {
-          author
-          review
-          finished
-          slug
-          stars
-          title
-        }
+    airtable(data: { Slug: { eq: $slug } }) {
+      id
+      data {
+        Author
+        Date_Finished(formatString: "MMM YYYY")
+        Rating
+        Title
+        Review
       }
     }
   }

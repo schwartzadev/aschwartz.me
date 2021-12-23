@@ -5,10 +5,10 @@ View it online [here](http://aschwartz.me)!
 
 ## Development
 
-Install all of the dependencies with `npm i`.
-Run the development server with `npm run develop`.
+Install all of the dependencies with `yarn install`.
+Run the development server with `yarn develop`.
 
 ## Deployment
 
 `gatsby` is the code branch, and the site builds from `master`.
-`npm run deploy` will update the `master` branch and push the changes to GitHub.
+`yarn deploy` will update the `master` branch and push the changes to GitHub.

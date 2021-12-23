@@ -1,13 +1,13 @@
 import React from 'react'
 import Item from './item'
-import SectionStyles from './section.module.scss'
+import { title, content } from './section.module.scss'
 
 export default ({ title, items = [], htmlContent }) => (
   <section>
-    <h1 className={SectionStyles.title}>{title}</h1>
+    <h1 className={title}>{title}</h1>
     {htmlContent && (
       <div
-        className={SectionStyles.content}
+        className={content}
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
     )}

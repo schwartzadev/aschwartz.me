@@ -1,29 +1,30 @@
 exports.createPages = async function ({ actions, graphql }) {
   const { data } = await graphql(`
     {
-      allContentYaml {
+      allAirtable {
         nodes {
-          books {
-            author
-            review
-            finished
-            slug
-            stars
-            title
+          id
+          data {
+            Author
+            Slug
+            Date_Finished(formatString: "MMM YYYY")
+            Rating
+            Title
+            Review
           }
         }
       }
     }
   `)
-  const books = data.allContentYaml.nodes[0].books
+  const books = data.allAirtable.nodes
 
   books
-    .filter(book => book.slug && book.review)
+    .filter(book => book.data.Slug && book.data.Review)
     .forEach(book => {
       actions.createPage({
-        path: `books/${book.slug}`,
+        path: `/books/${book.data.Slug}`,
         component: require.resolve(`./src/templates/book.js`),
-        context: { slug: book.slug },
+        context: { slug: book.data.Slug },
       })
     })
 }

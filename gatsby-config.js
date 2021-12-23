@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Andrew Schwartz`,
@@ -12,8 +16,8 @@ module.exports = {
       'Design',
       'Software',
       'Colorado',
-      'Programming',
-    ]
+      'Engineer',
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -64,6 +68,19 @@ module.exports = {
         theme_color: `#31BBCF`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        // concurrency: 5, // default, see using markdown and attachments for more information FIXME: delete this line?
+        tables: [
+          {
+            baseId: process.env.AIRTABLE_BASE_ID,
+            tableName: `Books`,
+          },
+        ],
       },
     },
   ],

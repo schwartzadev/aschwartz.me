@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import moment from 'moment'
 
 import Layout from '../components/layout'
 import Stars from '../components/stars'
@@ -10,8 +9,10 @@ import Lede from '../components/lede'
 import CallsToAction from '../components/calls-to-action'
 
 export default ({ data }) => {
-  const books = data.allContentYaml.nodes[0].books
+  const books = data.allAirtable.nodes
 
+  console.log(books)
+  console.log(data)
   const ctas = [
     {
       name: 'Browse my GitHub',
@@ -28,24 +29,29 @@ export default ({ data }) => {
       <Lede>What I've been reading</Lede>
       <Table>
         <tbody>
-          {books.map(book => (
-            <tr key={book.slug}>
-              <td>
-                <em>
-                  {book.slug && book.review ? (
-                    <Link to={`books/${book.slug}`}>{book.title}</Link>
-                  ) : (
-                    <>{book.title}</>
-                  )}
-                </em>{' '}
-                by {book.author}
-              </td>
-              <td>{moment(book.finished, 'MM-DD-YYYY').format('MMM YYYY')}</td>
-              <td>
-                <Stars count={book.stars} />
-              </td>
-            </tr>
-          ))}
+          {books.map(book => {
+            const bookData = book.data
+            return (
+              <tr key={bookData.Slug}>
+                <td>
+                  <em>
+                    {bookData.Slug && bookData.Review ? (
+                      <Link to={`/books/${bookData.Slug}`}>
+                        {bookData.Title}
+                      </Link>
+                    ) : (
+                      <>{bookData.Title}</>
+                    )}
+                  </em>{' '}
+                  by {bookData.Author}
+                </td>
+                <td>{bookData.Date_Finished}</td>
+                <td>
+                  <Stars count={bookData.Rating} />
+                </td>
+              </tr>
+            )
+          })}
         </tbody>
       </Table>
       <p>
@@ -58,15 +64,16 @@ export default ({ data }) => {
 
 export const query = graphql`
   {
-    allContentYaml {
+    allAirtable(sort: { fields: data___Date_Finished, order: DESC }) {
       nodes {
-        books {
-          author
-          review
-          finished
-          slug
-          stars
-          title
+        id
+        data {
+          Author
+          Slug
+          Date_Finished(formatString: "MMM YYYY")
+          Rating
+          Title
+          Review
         }
       }
     }

@@ -1,4 +1,4 @@
 import React from 'react'
-import HrStyles from './hr.module.scss'
+import { hr } from './hr.module.scss'
 
-export default () => <hr className={HrStyles.hr} />
+export default () => <hr className={hr} />

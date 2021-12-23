@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroStyles from './hero.module.scss'
+import { hero } from './hero.module.scss'
 
 export default () => (
-  <div className={HeroStyles.hero}>
+  <div className={hero}>
     <h1>
       <span role="img" aria-label="wave">
         👋

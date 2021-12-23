@@ -1,6 +1,6 @@
 import React from 'react'
-import containerStyles from './container.module.scss'
+import { container } from './container.module.scss'
 
 export default ({ children }) => {
-  return <div className={containerStyles.container}>{children}</div>
+  return <div className={container}>{children}</div>
 }
