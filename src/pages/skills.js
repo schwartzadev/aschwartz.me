@@ -7,9 +7,12 @@ import Lede from '../components/lede'
 import Navigation from '../components/navigation'
 import Section from '../components/section'
 
-export default ({ data }) => {
+const Skills = ({ data }) => {
   const ledeContent = (
-    <>I am a full stack software engineer and an aspiring designer. Here’s what I do.</>
+    <>
+      I am a full stack software engineer and an aspiring designer. Here’s what
+      I do.
+    </>
   )
   return (
     <Layout title="Skills">
@@ -38,3 +41,4 @@ export const query = graphql`
     }
   }
 `
+export default Skills

@@ -1,12 +1,11 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import moment from 'moment'
 
 import Layout from '../components/layout'
 import Stars from '../components/stars'
 import Header from '../components/layout/header'
 
-export default ({ data, pageContext }) => {
+const Book = ({ data, pageContext }) => {
   const bookData = data.airtable.data
 
   return (
@@ -43,3 +42,4 @@ export const query = graphql`
     }
   }
 `
+export default Book

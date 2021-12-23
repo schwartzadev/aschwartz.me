@@ -3,15 +3,15 @@ import { Link } from 'gatsby'
 import Hr from './hr'
 import {
   container,
-  title,
+  title as titleStyle,
   ctasList,
   topLink,
 } from './calls-to-action.module.scss'
 
-export default ({ title, ctas }) => (
+const CallsToAction = ({ title, ctas }) => (
   <div className={container}>
     <Hr />
-    <h2 className={title}>{title}</h2>
+    <h2 className={titleStyle}>{title}</h2>
     <ul className={ctasList}>
       {ctas.map(cta => (
         <li key={cta.name}>
@@ -28,3 +28,5 @@ export default ({ title, ctas }) => (
     </a>
   </div>
 )
+
+export default CallsToAction

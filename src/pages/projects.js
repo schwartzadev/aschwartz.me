@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import ListPage from '../components/list-page'
 
-export default ({ data }) => {
+const Projects = ({ data }) => {
   const projects = data.allContentYaml.nodes[0].projects
 
   const ledeContent = <>Explore what I’ve been working on.</>
@@ -42,3 +42,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Projects

@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 import Navigation from '../components/navigation'
 import Section from '../components/section'
 
-export default ({ data }) => {
+const Index = ({ data }) => {
   return (
     <Layout title="Home">
       <Navigation />
@@ -31,3 +31,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Index

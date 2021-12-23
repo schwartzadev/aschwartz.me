@@ -1,11 +1,19 @@
 import React from 'react'
-import { title, content } from './item.module.scss'
+import {
+  title as titleStyle,
+  content as contentStyle,
+} from './item.module.scss'
 
-export default ({ title, content, slug }) => (
+const Item = ({ title, content, slug }) => (
   <div>
-    <h3 className={title} id={slug}>
+    <h3 className={titleStyle} id={slug}>
       {title}
     </h3>
-    <div className={content} dangerouslySetInnerHTML={{ __html: content }} />
+    <div
+      className={contentStyle}
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   </div>
 )
+
+export default Item
