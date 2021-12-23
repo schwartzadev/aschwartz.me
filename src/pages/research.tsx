@@ -9,7 +9,7 @@ const Research = ({
 }: any) => {
   const research = data.allContentYaml.nodes[0].research
 
-  // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
   const ledeContent = <>See my past and current research projects.</>
 
   const ctas = [
@@ -18,7 +18,7 @@ const Research = ({
   ]
 
   return (
-    // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
     <ListPage
       listItems={research}
       title="Research"

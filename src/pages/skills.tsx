@@ -16,22 +16,22 @@ const Skills = ({
   data
 }: any) => {
   const ledeContent = (
-    // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
     <>
       I am a full stack software engineer and an aspiring designer. Here’s what
       I do.
     </>
   )
   return (
-    // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
     <Layout title="Skills">
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <Navigation />
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <Lede>{ledeContent}</Lede>
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <Section htmlContent={data.markdownRemark.html} title="My Skills" />
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <CallsToAction
         ctas={[
           { name: 'Explore my projects', href: '/projects' },

@@ -9,12 +9,12 @@ export default ({
   items = [],
   htmlContent
 }: any) => (
-  // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
   <section>
-    // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
     <h1 className={title}>{title}</h1>
     {htmlContent && (
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <div
         className={content}
         dangerouslySetInnerHTML={{ __html: htmlContent }}
@@ -22,7 +22,7 @@ export default ({
     )}
     // @ts-expect-error ts-migrate(7006) FIXME: Parameter 'item' implicitly has an 'any' type.
     {items.map(item => (
-      // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
+
       <Item
         key={item.title}
         title={item.title}
