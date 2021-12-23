@@ -14,9 +14,7 @@ import Lede from '../components/lede'
 // @ts-expect-error ts-migrate(6142) FIXME: Module '../components/calls-to-action' was resolve... Remove this comment to see the full error message
 import CallsToAction from '../components/calls-to-action'
 
-export default ({
-  data
-}: any) => {
+export default ({ data }: any) => {
   const books = data.allAirtable.nodes
 
   const ctas = [
@@ -30,32 +28,24 @@ export default ({
   ]
 
   return (
-
     <Layout title="Books">
-
       <Header />
 
       <Lede>What I've been reading</Lede>
 
       <Table>
-
         <tbody>
           {books.map((book: any) => {
             const bookData = book.data
             return (
-
               <tr key={bookData.Slug}>
-
                 <td>
-
                   <em>
                     {bookData.Slug && bookData.Review ? (
-
                       <Link to={`/books/${bookData.Slug}`}>
                         {bookData.Title}
                       </Link>
                     ) : (
-
                       <>{bookData.Title}</>
                     )}
                   </em>{' '}
@@ -65,7 +55,6 @@ export default ({
                 <td>{bookData.Date_Finished}</td>
 
                 <td>
-
                   <Stars count={bookData.Rating} />
                 </td>
               </tr>
@@ -75,13 +64,12 @@ export default ({
       </Table>
 
       <p>
-
         <em>(since November 2021)</em>
       </p>
 
       <CallsToAction title="Learn more about me." ctas={ctas} />
     </Layout>
-  );
+  )
 }
 
 export const query = graphql`

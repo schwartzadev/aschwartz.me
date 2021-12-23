@@ -16,12 +16,10 @@ export default ({
   title,
   ledeContent,
   ctaTitle,
-  callsToAction
+  callsToAction,
 }: any) => {
   return (
-
     <Layout title={title}>
-
       <Header />
 
       <Lede>{ledeContent}</Lede>

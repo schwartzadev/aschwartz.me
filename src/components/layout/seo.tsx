@@ -11,12 +11,7 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({
-  description,
-  lang,
-  meta,
-  title
-}: any) {
+function SEO({ description, lang, meta, title }: any) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -29,12 +24,16 @@ function SEO({
             keywords
           }
         }
-        socialCard: imageSharp(fluid: {originalName: {eq: "social-card.png"}}) {
+        socialCard: imageSharp(
+          fluid: { originalName: { eq: "social-card.png" } }
+        ) {
           resize(width: 1200) {
             src
           }
         }
-        twitterSocialCard: imageSharp(fluid: {originalName: {eq: "twitter-social-card.png"}}) {
+        twitterSocialCard: imageSharp(
+          fluid: { originalName: { eq: "twitter-social-card.png" } }
+        ) {
           resize(width: 1200) {
             src
           }
@@ -49,7 +48,6 @@ function SEO({
   const metaDescription = description || data.site.siteMetadata.description
 
   return (
-
     <Helmet
       htmlAttributes={{
         lang,
@@ -62,8 +60,8 @@ function SEO({
           content: metaDescription,
         },
         {
-          name: "keywords",
-          content: data.site.siteMetadata.keywords.join(","),
+          name: 'keywords',
+          content: data.site.siteMetadata.keywords.join(','),
         },
         {
           property: `og:title`,
@@ -100,7 +98,7 @@ function SEO({
         {
           name: 'twitter:image',
           content: twitterSocialCard,
-        }
+        },
       ].concat(meta)}
     />
   )

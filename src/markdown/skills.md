@@ -26,7 +26,7 @@ I have worked with Javascript on both the front- and back-end. Some Javascript t
 
 - React Native for mobile application development
 - [Gatsby](https://gatsbyjs.org) (which is based on [React](https://reactjs.org/)) for
-front-end website development of static sites (like this one!)
+  front-end website development of static sites (like this one!)
 - Vanilla [React](https://reactjs.org/) to create web clients
 - [JQuery](https://jquery.com/) and Ajax for various front-end applications
 

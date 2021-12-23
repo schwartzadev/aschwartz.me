@@ -1,8 +1,5 @@
 // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name 'exports'.
-exports.createPages = async function ({
-  actions,
-  graphql
-}: any) {
+exports.createPages = async function ({ actions, graphql }: any) {
   const { data } = await graphql(`
     {
       allAirtable {

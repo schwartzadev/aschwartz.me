@@ -11,18 +11,12 @@ import SEO from './seo'
 import '../../../scss/global.scss'
 import 'normalize.css'
 
-const Layout = ({
-  title,
-  children
-}: any) => {
+const Layout = ({ title, children }: any) => {
   return (
-
     <>
-
       <SEO title={title} />
 
       <Container>
-
         <main>{children}</main>
       </Container>
 

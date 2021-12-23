@@ -4,11 +4,8 @@ import { graphql } from 'gatsby'
 // @ts-expect-error ts-migrate(6142) FIXME: Module '../components/list-page' was resolved to '... Remove this comment to see the full error message
 import ListPage from '../components/list-page'
 
-const Projects = ({
-  data
-}: any) => {
+const Projects = ({ data }: any) => {
   const projects = data.allContentYaml.nodes[0].projects
-
 
   const ledeContent = <>Explore what I’ve been working on.</>
 
@@ -23,7 +20,6 @@ const Projects = ({
   ]
 
   return (
-
     <ListPage
       listItems={projects}
       title="Projects"

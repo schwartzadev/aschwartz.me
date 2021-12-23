@@ -12,20 +12,15 @@ import Navigation from '../components/navigation'
 // @ts-expect-error ts-migrate(6142) FIXME: Module '../components/section' was resolved to '/h... Remove this comment to see the full error message
 import Section from '../components/section'
 
-const Skills = ({
-  data
-}: any) => {
+const Skills = ({ data }: any) => {
   const ledeContent = (
-
     <>
       I am a full stack software engineer and an aspiring designer. Here’s what
       I do.
     </>
   )
   return (
-
     <Layout title="Skills">
-
       <Navigation />
 
       <Lede>{ledeContent}</Lede>

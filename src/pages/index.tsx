@@ -12,13 +12,9 @@ import Navigation from '../components/navigation'
 // @ts-expect-error ts-migrate(6142) FIXME: Module '../components/section' was resolved to '/h... Remove this comment to see the full error message
 import Section from '../components/section'
 
-const Index = ({
-  data
-}: any) => {
+const Index = ({ data }: any) => {
   return (
-
     <Layout title="Home">
-
       <Navigation />
 
       <Hero />

@@ -8,16 +8,11 @@ import Stars from '../components/stars'
 // @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout/header' was resolved ... Remove this comment to see the full error message
 import Header from '../components/layout/header'
 
-const Book = ({
-  data,
-  pageContext
-}: any) => {
+const Book = ({ data, pageContext }: any) => {
   const bookData = data.airtable.data
 
   return (
-
     <Layout title="Books">
-
       <Header />
 
       <h2 style={{ paddingTop: '1rem', fontStyle: 'italic' }}>
@@ -31,12 +26,10 @@ const Book = ({
       <p>{bookData.Review}</p>
 
       <p>
-
         <Stars count={bookData.Rating} />
       </p>
 
       <span>
-
         ← <Link to="/books">Back to all books</Link>
       </span>
     </Layout>
