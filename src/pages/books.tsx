@@ -8,9 +8,9 @@ import { graphql, Link } from 'gatsby'
 import React from 'react'
 
 export default ({ data }: any) => {
-  const books = data.allAirtable.nodes
+  const books: Book[] = data.allAirtable.nodes
 
-  const ctas = [
+  const ctas: Cta[] = [
     {
       name: 'Browse my GitHub',
       href: 'https://github.com/schwartzadev/',
@@ -23,9 +23,7 @@ export default ({ data }: any) => {
   return (
     <Layout title="Books">
       <Header />
-
       <Lede>What I've been reading</Lede>
-
       <Table>
         <tbody>
           {books.map((book: any) => {
@@ -44,9 +42,7 @@ export default ({ data }: any) => {
                   </em>{' '}
                   by {bookData.Author}
                 </td>
-
                 <td>{bookData.Date_Finished}</td>
-
                 <td>
                   <Stars count={bookData.Rating} />
                 </td>
@@ -55,11 +51,9 @@ export default ({ data }: any) => {
           })}
         </tbody>
       </Table>
-
       <p>
         <em>(since November 2021)</em>
       </p>
-
       <CallsToAction title="Learn more about me." ctas={ctas} />
     </Layout>
   )

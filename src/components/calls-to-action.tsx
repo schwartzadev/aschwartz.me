@@ -8,12 +8,15 @@ import Hr from './hr'
 import { Link } from 'gatsby'
 import React from 'react'
 
-const CallsToAction = ({ title, ctas }: any) => (
+interface CallsToActionProps {
+  title: string
+  ctas: Cta[]
+}
+
+const CallsToAction = ({ title, ctas }: CallsToActionProps) => (
   <div className={container}>
     <Hr />
-
     <h2 className={titleStyle}>{title}</h2>
-
     <ul className={ctasList}>
       {ctas.map((cta: any) => (
         <li key={cta.name}>

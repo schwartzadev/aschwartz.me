@@ -2,7 +2,13 @@ import Item from './item'
 import { title, content } from './section.module.scss'
 import React from 'react'
 
-export default ({ title, items = [], htmlContent }: any) => (
+interface SectionProps {
+  title: string
+  items: any[]
+  htmlContent?: string
+}
+
+const Section = ({ title, items = [], htmlContent }: SectionProps) => (
   <section>
     <h1 className={title}>{title}</h1>
     {htmlContent && (
@@ -11,8 +17,6 @@ export default ({ title, items = [], htmlContent }: any) => (
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
     )}
-    // @ts-expect-error ts-migrate(7006) FIXME: Parameter 'item' implicitly has
-    an 'any' type.
     {items.map(item => (
       <Item
         key={item.title}
@@ -23,3 +27,5 @@ export default ({ title, items = [], htmlContent }: any) => (
     ))}
   </section>
 )
+
+export default Section

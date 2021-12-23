@@ -6,15 +6,18 @@ import 'normalize.css'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Layout = ({ title, children }: any) => {
+interface LayoutProps {
+  title: string
+  children: React.ReactNode
+}
+
+const Layout = ({ title, children }: LayoutProps) => {
   return (
     <>
       <SEO title={title} />
-
       <Container>
         <main>{children}</main>
       </Container>
-
       <Footer />
     </>
   )
