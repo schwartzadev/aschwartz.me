@@ -9,7 +9,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-function SEO({ description, lang, meta, title }: any) {
+interface SEOProps {
+  description?: string
+  lang?: string
+  meta: {
+    name: string
+    content: string
+  }[]
+  title: string
+}
+
+function SEO({ description, lang, meta, title }: SEOProps) {
   const data = useStaticQuery(
     graphql`
       query {
