@@ -1,5 +1,5 @@
-import Item from './item'
-import { title, content } from './section.module.scss'
+import SectionItem from './section-item'
+import { title as titleStyle, content } from './section.module.scss'
 import React from 'react'
 
 interface SectionProps {
@@ -10,7 +10,7 @@ interface SectionProps {
 
 const Section = ({ title, items = [], htmlContent }: SectionProps) => (
   <section>
-    <h1 className={title}>{title}</h1>
+    <h1 className={titleStyle}>{title}</h1>
     {htmlContent && (
       <div
         className={content}
@@ -18,7 +18,7 @@ const Section = ({ title, items = [], htmlContent }: SectionProps) => (
       />
     )}
     {items.map(item => (
-      <Item
+      <SectionItem
         key={item.title}
         title={item.title}
         content={item.description}
