@@ -1,7 +1,10 @@
+// @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'require'. Do you need to install... Remove this comment to see the full error message
 require('dotenv').config({
+  // @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'process'. Do you need to install... Remove this comment to see the full error message
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+// @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'module'. Do you need to install ... Remove this comment to see the full error message
 module.exports = {
   siteMetadata: {
     title: `Andrew Schwartz`,
@@ -26,6 +29,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
+        // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '__dirname'.
         path: `${__dirname}/src/images`,
       },
     },
@@ -39,6 +43,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
+        // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '__dirname'.
         path: `${__dirname}/src/markdown`,
       },
     },
@@ -73,10 +78,12 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
+        // @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'process'. Do you need to install... Remove this comment to see the full error message
         apiKey: process.env.AIRTABLE_API_KEY,
         // concurrency: 5, // default, see using markdown and attachments for more information FIXME: delete this line?
         tables: [
           {
+            // @ts-expect-error ts-migrate(2580) FIXME: Cannot find name 'process'. Do you need to install... Remove this comment to see the full error message
             baseId: process.env.AIRTABLE_BASE_ID,
             tableName: `Books`,
           },

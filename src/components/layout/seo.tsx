@@ -7,10 +7,16 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
+// @ts-expect-error ts-migrate(7016) FIXME: Could not find a declaration file for module 'reac... Remove this comment to see the full error message
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title
+}: any) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -43,6 +49,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || data.site.siteMetadata.description
 
   return (
+    // @ts-expect-error ts-migrate(17004) FIXME: Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <Helmet
       htmlAttributes={{
         lang,
