@@ -1,7 +1,7 @@
 import { container, contactList, comments } from './footer.module.scss'
 import React from 'react'
 
-export default () => (
+const Footer = () => (
   <footer className={container}>
     <h2>Contact me</h2>
 
@@ -9,11 +9,9 @@ export default () => (
       <li>
         <a href="https://www.linkedin.com/in/andrewtschwartz/">LinkedIn</a>
       </li>
-
       <li>
         <a href="mailto:andrew@aschwartz.me">Email</a>
       </li>
-
       <li>
         <a href="https://github.com/schwartzadev/">GitHub</a>
       </li>
@@ -24,7 +22,6 @@ export default () => (
         Source & hosting on{' '}
         <a href="https://github.com/schwartzadev/aschwartz.me">GitHub</a>
       </p>
-
       <p>
         Made with{' '}
         <span role="img" aria-label="heart">
@@ -37,3 +34,5 @@ export default () => (
     </div>
   </footer>
 )
+
+export default Footer

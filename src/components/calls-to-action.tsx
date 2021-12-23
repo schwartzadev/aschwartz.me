@@ -18,7 +18,7 @@ const CallsToAction = ({ title, ctas }: CallsToActionProps) => (
     <Hr />
     <h2 className={titleStyle}>{title}</h2>
     <ul className={ctasList}>
-      {ctas.map((cta: any) => (
+      {ctas.map(cta => (
         <li key={cta.name}>
           {cta.external ? (
             <a href={cta.href}>{cta.name}</a>

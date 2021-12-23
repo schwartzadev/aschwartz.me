@@ -1,6 +1,8 @@
-import { container } from './container.module.scss'
+import { container as containerStyles } from './container.module.scss'
 import React from 'react'
 
-export default ({ children }: any) => {
-  return <div className={container}>{children}</div>
+const Container = ({ children }: any) => {
+  return <div className={containerStyles}>{children}</div>
 }
+
+export default Container

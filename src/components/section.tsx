@@ -4,7 +4,7 @@ import React from 'react'
 
 interface SectionProps {
   title: string
-  items: any[]
+  items?: any[]
   htmlContent?: string
 }
 
@@ -27,5 +27,9 @@ const Section = ({ title, items = [], htmlContent }: SectionProps) => (
     ))}
   </section>
 )
+
+Section.defaultProps = {
+  items: [],
+}
 
 export default Section

@@ -6,15 +6,16 @@ import Section from '../components/section'
 import { graphql } from 'gatsby'
 import React from 'react'
 
-const Index = ({ data }: any) => {
+interface IndexProps {
+  data: MarkdownQueryResult
+}
+
+const Index = ({ data }: IndexProps) => {
   return (
     <Layout title="Home">
       <Navigation />
-
       <Hero />
-
       <Section htmlContent={data.markdownRemark.html} title="Highlights" />
-
       <CallsToAction
         ctas={[
           { name: 'Explore my projects', href: '/projects' },

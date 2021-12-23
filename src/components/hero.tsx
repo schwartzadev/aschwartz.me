@@ -1,8 +1,8 @@
-import { hero } from './hero.module.scss'
+import { hero as heroStyle } from './hero.module.scss'
 import React from 'react'
 
-export default () => (
-  <div className={hero}>
+const Hero = () => (
+  <div className={heroStyle}>
     <h1>
       <span role="img" aria-label="wave">
         👋
@@ -19,3 +19,5 @@ export default () => (
     </h3>
   </div>
 )
+
+export default Hero

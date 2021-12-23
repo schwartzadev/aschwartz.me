@@ -24,3 +24,9 @@ interface SectionItem {
   content: string
   slug: string
 }
+
+interface MarkdownQueryResult {
+  markdownRemark: {
+    html: string
+  }
+}

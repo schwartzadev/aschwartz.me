@@ -6,21 +6,19 @@ import Section from '../components/section'
 import { graphql } from 'gatsby'
 import React from 'react'
 
-const Skills = ({ data }: any) => {
-  const ledeContent = (
-    <>
-      I am a full stack software engineer and an aspiring designer. Here’s what
-      I do.
-    </>
-  )
+interface SkillsProps {
+  data: MarkdownQueryResult
+}
+
+const Skills = ({ data }: SkillsProps) => {
+  const ledeContent =
+    'I am a full stack software engineer and an aspiring designer. Here’s what I do.'
+
   return (
     <Layout title="Skills">
       <Navigation />
-
       <Lede>{ledeContent}</Lede>
-
       <Section htmlContent={data.markdownRemark.html} title="My Skills" />
-
       <CallsToAction
         ctas={[
           { name: 'Explore my projects', href: '/projects' },

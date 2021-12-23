@@ -1,6 +1,8 @@
 import { wrapper } from './table.module.scss'
 import React from 'react'
 
-export default ({ children }: any) => (
+const Table = ({ children }: any) => (
   <table className={wrapper}>{children}</table>
 )
+
+export default Table
