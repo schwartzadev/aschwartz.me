@@ -4,27 +4,28 @@ import Stars from '../components/stars'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 
-const Book = ({ data, pageContext }: any) => {
+interface BookProps {
+  data: {
+    airtable: Book
+  }
+}
+
+const Book = ({ data }: BookProps) => {
   const bookData = data.airtable.data
 
   return (
     <Layout title="Books">
       <Header />
-
       <h2 style={{ paddingTop: '1rem', fontStyle: 'italic' }}>
         {bookData.Title}
       </h2>
-
       <p>
         Book by {bookData.Author} &bull; Reviewed {bookData.Date_Finished}{' '}
       </p>
-
       <p>{bookData.Review}</p>
-
       <p>
         <Stars count={bookData.Rating} />
       </p>
-
       <span>
         ← <Link to="/books">Back to all books</Link>
       </span>

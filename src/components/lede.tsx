@@ -1,5 +1,7 @@
-import { lede } from './lede.module.scss'
+import { lede as ledeStyle } from './lede.module.scss'
 import React from 'react'
 
-const Lede = ({ children }: any) => <h2 className={lede}>{children}</h2>
+const Lede = ({ children }: { children: string }) => (
+  <h2 className={ledeStyle}>{children}</h2>
+)
 export default Lede

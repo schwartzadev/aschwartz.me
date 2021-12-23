@@ -5,22 +5,29 @@ import Lede from '../components/lede'
 import Section from '../components/section'
 import React from 'react'
 
-export default ({
+interface ListPageProps {
+  listItems: any[]
+  title: string
+  ledeContent: string
+  ctaTitle: string
+  callsToAction: Cta[]
+}
+
+const ListPage = ({
   listItems,
   title,
   ledeContent,
   ctaTitle,
   callsToAction,
-}: any) => {
+}: ListPageProps) => {
   return (
     <Layout title={title}>
       <Header />
-
       <Lede>{ledeContent}</Lede>
-
       <Section items={listItems} title={title} />
-
       <CallsToAction title={ctaTitle} ctas={callsToAction} />
     </Layout>
   )
 }
+
+export default ListPage

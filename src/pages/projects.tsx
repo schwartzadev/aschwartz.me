@@ -5,7 +5,7 @@ import React from 'react'
 const Projects = ({ data }: any) => {
   const projects = data.allContentYaml.nodes[0].projects
 
-  const ledeContent = <>Explore what I’ve been working on.</>
+  const ledeContent = 'Explore what I’ve been working on.'
 
   const ctas = [
     {

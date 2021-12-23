@@ -4,13 +4,7 @@ import {
 } from './section-item.module.scss'
 import React from 'react'
 
-interface SectionItemProps {
-  title: string
-  content: string
-  slug: string
-}
-
-const SectionItem = ({ title, content, slug }: SectionItemProps) => (
+const SectionItem = ({ title, content, slug }: SectionItem) => (
   <div>
     <h3 className={titleStyle} id={slug}>
       {title}
