@@ -20,7 +20,7 @@
     "gatsby-transformer-sharp": "^4.4.0",
     "gatsby-transformer-yaml-plus": "^0.2.2",
     "moment": "^2.29.1",
-    "node-sass": "^6.0.0",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
