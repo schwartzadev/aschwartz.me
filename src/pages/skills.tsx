@@ -1,19 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-
 import CallsToAction from '../components/calls-to-action'
 import Layout from '../components/layout'
 import Lede from '../components/lede'
 import Navigation from '../components/navigation'
 import Section from '../components/section'
+import { graphql } from 'gatsby'
+import React from 'react'
 
-const Skills = ({ data }) => {
-  const ledeContent = (
-    <>
-      I am a full stack software engineer and an aspiring designer. Here’s what
-      I do.
-    </>
-  )
+interface SkillsProps {
+  data: MarkdownQueryResult
+}
+
+const Skills = ({ data }: SkillsProps) => {
+  const ledeContent =
+    'I am a full stack software engineer and an aspiring designer. Here’s what I do.'
+
   return (
     <Layout title="Skills">
       <Navigation />

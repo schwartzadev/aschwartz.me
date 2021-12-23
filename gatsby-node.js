@@ -23,7 +23,7 @@ exports.createPages = async function ({ actions, graphql }) {
     .forEach(book => {
       actions.createPage({
         path: `/books/${book.data.Slug}`,
-        component: require.resolve(`./src/templates/book.js`),
+        component: require.resolve(`./src/templates/book.tsx`),
         context: { slug: book.data.Slug },
       })
     })

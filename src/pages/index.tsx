@@ -1,13 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-
 import CallsToAction from '../components/calls-to-action'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import Navigation from '../components/navigation'
 import Section from '../components/section'
+import { graphql } from 'gatsby'
+import React from 'react'
 
-const Index = ({ data }) => {
+interface IndexProps {
+  data: MarkdownQueryResult
+}
+
+const Index = ({ data }: IndexProps) => {
   return (
     <Layout title="Home">
       <Navigation />

@@ -1,17 +1,24 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-
+import CallsToAction from '../components/calls-to-action'
 import Layout from '../components/layout'
-import Stars from '../components/stars'
-import Table from '../components/table'
 import Header from '../components/layout/header'
 import Lede from '../components/lede'
-import CallsToAction from '../components/calls-to-action'
+import Stars from '../components/stars'
+import Table from '../components/table'
+import { graphql, Link } from 'gatsby'
+import React from 'react'
 
-export default ({ data }) => {
+interface BooksProps {
+  data: {
+    allAirtable: {
+      nodes: Book[]
+    }
+  }
+}
+
+const Books = ({ data }: BooksProps) => {
   const books = data.allAirtable.nodes
 
-  const ctas = [
+  const ctas: Cta[] = [
     {
       name: 'Browse my GitHub',
       href: 'https://github.com/schwartzadev/',
@@ -77,3 +84,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Books

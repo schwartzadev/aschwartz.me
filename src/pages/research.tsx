@@ -1,12 +1,11 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-
 import ListPage from '../components/list-page'
+import { graphql } from 'gatsby'
+import React from 'react'
 
-const Research = ({ data }) => {
+const Research = ({ data }: any) => {
   const research = data.allContentYaml.nodes[0].research
 
-  const ledeContent = <>See my past and current research projects.</>
+  const ledeContent = 'See my past and current research projects.'
 
   const ctas = [
     { name: 'Read my latest updates', href: '/' },

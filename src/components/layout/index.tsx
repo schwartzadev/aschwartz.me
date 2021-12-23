@@ -1,14 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-import Footer from './footer'
-import Container from './container'
-import SEO from './seo'
-
 import '../../../scss/global.scss'
+import Container from './container'
+import Footer from './footer'
+import SEO from './seo'
 import 'normalize.css'
+import PropTypes from 'prop-types'
+import React from 'react'
 
-const Layout = ({ title, children }) => {
+interface LayoutProps {
+  title: string
+  children: React.ReactNode
+}
+
+const Layout = ({ title, children }: LayoutProps) => {
   return (
     <>
       <SEO title={title} />

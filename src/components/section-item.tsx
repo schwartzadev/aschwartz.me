@@ -1,14 +1,15 @@
-import React from 'react'
 import {
   title as titleStyle,
   content as contentStyle,
-} from './item.module.scss'
+} from './section-item.module.scss'
+import React from 'react'
 
-const Item = ({ title, content, slug }) => (
+const SectionItem = ({ title, content, slug }: SectionItem) => (
   <div>
     <h3 className={titleStyle} id={slug}>
       {title}
     </h3>
+
     <div
       className={contentStyle}
       dangerouslySetInnerHTML={{ __html: content }}
@@ -16,4 +17,4 @@ const Item = ({ title, content, slug }) => (
   </div>
 )
 
-export default Item
+export default SectionItem

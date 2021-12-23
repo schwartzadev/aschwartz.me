@@ -1,14 +1,19 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Hr from './hr'
 import {
   container,
   title as titleStyle,
   ctasList,
   topLink,
 } from './calls-to-action.module.scss'
+import Hr from './hr'
+import { Link } from 'gatsby'
+import React from 'react'
 
-const CallsToAction = ({ title, ctas }) => (
+interface CallsToActionProps {
+  title: string
+  ctas: Cta[]
+}
+
+const CallsToAction = ({ title, ctas }: CallsToActionProps) => (
   <div className={container}>
     <Hr />
     <h2 className={titleStyle}>{title}</h2>
@@ -23,6 +28,7 @@ const CallsToAction = ({ title, ctas }) => (
         </li>
       ))}
     </ul>
+
     <a className={topLink} href="#nav">
       Back to top.
     </a>

@@ -1,11 +1,16 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-
 import Layout from '../components/layout'
-import Stars from '../components/stars'
 import Header from '../components/layout/header'
+import Stars from '../components/stars'
+import { graphql, Link } from 'gatsby'
+import React from 'react'
 
-const Book = ({ data, pageContext }) => {
+interface BookProps {
+  data: {
+    airtable: Book
+  }
+}
+
+const Book = ({ data }: BookProps) => {
   const bookData = data.airtable.data
 
   return (

@@ -4,13 +4,22 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
-function SEO({ description, lang, meta, title }) {
+interface SEOProps {
+  description?: string
+  lang?: string
+  meta: {
+    name: string
+    content: string
+  }[]
+  title: string
+}
+
+function SEO({ description, lang, meta, title }: SEOProps) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -23,12 +32,16 @@ function SEO({ description, lang, meta, title }) {
             keywords
           }
         }
-        socialCard: imageSharp(fluid: {originalName: {eq: "social-card.png"}}) {
+        socialCard: imageSharp(
+          fluid: { originalName: { eq: "social-card.png" } }
+        ) {
           resize(width: 1200) {
             src
           }
         }
-        twitterSocialCard: imageSharp(fluid: {originalName: {eq: "twitter-social-card.png"}}) {
+        twitterSocialCard: imageSharp(
+          fluid: { originalName: { eq: "twitter-social-card.png" } }
+        ) {
           resize(width: 1200) {
             src
           }
@@ -55,8 +68,8 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name: "keywords",
-          content: data.site.siteMetadata.keywords.join(","),
+          name: 'keywords',
+          content: data.site.siteMetadata.keywords.join(','),
         },
         {
           property: `og:title`,
@@ -93,7 +106,7 @@ function SEO({ description, lang, meta, title }) {
         {
           name: 'twitter:image',
           content: twitterSocialCard,
-        }
+        },
       ].concat(meta)}
     />
   )

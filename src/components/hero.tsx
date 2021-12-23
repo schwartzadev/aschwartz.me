@@ -1,15 +1,17 @@
+import { hero as heroStyle } from './hero.module.scss'
 import React from 'react'
-import { hero } from './hero.module.scss'
 
-export default () => (
-  <div className={hero}>
+const Hero = () => (
+  <div className={heroStyle}>
     <h1>
       <span role="img" aria-label="wave">
         👋
       </span>{' '}
       I’m Andrew
     </h1>
+
     <h2>Full-stack software engineer</h2>
+
     <h3>
       <b>Let’s get in touch:</b>{' '}
       <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or{' '}
@@ -17,3 +19,5 @@ export default () => (
     </h3>
   </div>
 )
+
+export default Hero

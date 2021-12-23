@@ -1,6 +1,10 @@
 import React from 'react'
 
-export default ({ count }) => (
+interface StarsProps {
+  count: number
+}
+
+const Stars = ({ count }: StarsProps) => (
   <>
     {Array(count)
       .fill(5)
@@ -11,3 +15,5 @@ export default ({ count }) => (
       ))}
   </>
 )
+
+export default Stars
