@@ -7,8 +7,16 @@ import Table from '../components/table'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 
-export default ({ data }: any) => {
-  const books: Book[] = data.allAirtable.nodes
+interface BooksProps {
+  data: {
+    allAirtable: {
+      nodes: Book[]
+    }
+  }
+}
+
+const Books = ({ data }: BooksProps) => {
+  const books = data.allAirtable.nodes
 
   const ctas: Cta[] = [
     {
@@ -26,7 +34,7 @@ export default ({ data }: any) => {
       <Lede>What I've been reading</Lede>
       <Table>
         <tbody>
-          {books.map((book: any) => {
+          {books.map(book => {
             const bookData = book.data
             return (
               <tr key={bookData.Slug}>
@@ -76,3 +84,5 @@ export const query = graphql`
     }
   }
 `
+
+export default Books
