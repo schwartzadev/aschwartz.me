@@ -11,8 +11,6 @@ import CallsToAction from '../components/calls-to-action'
 export default ({ data }) => {
   const books = data.allAirtable.nodes
 
-  console.log(books)
-  console.log(data)
   const ctas = [
     {
       name: 'Browse my GitHub',
