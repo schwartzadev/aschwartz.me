@@ -1,7 +1,16 @@
 import React from 'react'
 
-import Logo from '../images/logo.svg'
+import LogoSvg from '../images/logo.svg'
+import { logo as logoStyle } from './logo.module.scss'
 
-export default ({ path, isNav }) => {
-  return <img src={Logo} alt={isNav ? "Home" : "Andrew Schwartz logo"} />
+const Logo = ({ path, isNav }) => {
+  return (
+    <img
+      src={LogoSvg}
+      alt={isNav ? 'Home' : 'Andrew Schwartz logo'}
+      className={logoStyle}
+    />
+  )
 }
+
+export default Logo
