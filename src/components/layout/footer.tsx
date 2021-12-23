@@ -1,6 +1,5 @@
-import React from 'react'
-// @ts-expect-error ts-migrate(2307) FIXME: Cannot find module './footer.module.scss' or its c... Remove this comment to see the full error message
 import { container, contactList, comments } from './footer.module.scss'
+import React from 'react'
 
 export default () => (
   <footer className={container}>

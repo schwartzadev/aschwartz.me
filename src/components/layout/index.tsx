@@ -1,15 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-// @ts-expect-error ts-migrate(6142) FIXME: Module './footer' was resolved to '/home/andrew/as... Remove this comment to see the full error message
-import Footer from './footer'
-// @ts-expect-error ts-migrate(6142) FIXME: Module './container' was resolved to '/home/andrew... Remove this comment to see the full error message
-import Container from './container'
-// @ts-expect-error ts-migrate(6142) FIXME: Module './seo' was resolved to '/home/andrew/aschw... Remove this comment to see the full error message
-import SEO from './seo'
-
 import '../../../scss/global.scss'
+import Container from './container'
+import Footer from './footer'
+import SEO from './seo'
 import 'normalize.css'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 const Layout = ({ title, children }: any) => {
   return (

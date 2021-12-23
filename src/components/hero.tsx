@@ -1,6 +1,5 @@
-import React from 'react'
-// @ts-expect-error ts-migrate(2307) FIXME: Cannot find module './hero.module.scss' or its cor... Remove this comment to see the full error message
 import { hero } from './hero.module.scss'
+import React from 'react'
 
 export default () => (
   <div className={hero}>

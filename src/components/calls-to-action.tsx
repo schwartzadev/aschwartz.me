@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Hr from './hr'
 import {
   container,
   title as titleStyle,
   ctasList,
   topLink,
 } from './calls-to-action.module.scss'
+import Hr from './hr'
+import { Link } from 'gatsby'
+import React from 'react'
 
 const CallsToAction = ({ title, ctas }: any) => (
   <div className={container}>

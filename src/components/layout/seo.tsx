@@ -4,12 +4,11 @@
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
-
-import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import React from 'react'
 // @ts-expect-error ts-migrate(7016) FIXME: Could not find a declaration file for module 'reac... Remove this comment to see the full error message
 import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 
 function SEO({ description, lang, meta, title }: any) {
   const data = useStaticQuery(

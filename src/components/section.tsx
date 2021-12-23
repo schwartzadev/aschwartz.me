@@ -1,8 +1,6 @@
-import React from 'react'
-// @ts-expect-error ts-migrate(6142) FIXME: Module './item' was resolved to '/home/andrew/asch... Remove this comment to see the full error message
 import Item from './item'
-// @ts-expect-error ts-migrate(2307) FIXME: Cannot find module './section.module.scss' or its ... Remove this comment to see the full error message
 import { title, content } from './section.module.scss'
+import React from 'react'
 
 export default ({ title, items = [], htmlContent }: any) => (
   <section>

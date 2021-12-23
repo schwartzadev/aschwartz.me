@@ -1,18 +1,11 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout' was resolved to '/ho... Remove this comment to see the full error message
-import Layout from '../components/layout'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/stars' was resolved to '/hom... Remove this comment to see the full error message
-import Stars from '../components/stars'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/table' was resolved to '/hom... Remove this comment to see the full error message
-import Table from '../components/table'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout/header' was resolved ... Remove this comment to see the full error message
-import Header from '../components/layout/header'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/lede' was resolved to '/home... Remove this comment to see the full error message
-import Lede from '../components/lede'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/calls-to-action' was resolve... Remove this comment to see the full error message
 import CallsToAction from '../components/calls-to-action'
+import Layout from '../components/layout'
+import Header from '../components/layout/header'
+import Lede from '../components/lede'
+import Stars from '../components/stars'
+import Table from '../components/table'
+import { graphql, Link } from 'gatsby'
+import React from 'react'
 
 export default ({ data }: any) => {
   const books = data.allAirtable.nodes

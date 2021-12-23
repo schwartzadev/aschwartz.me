@@ -1,9 +1,6 @@
-import React from 'react'
-
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout' was resolved to '/ho... Remove this comment to see the full error message
 import Layout from '../components/layout'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout/seo' was resolved to ... Remove this comment to see the full error message
 import SEO from '../components/layout/seo'
+import React from 'react'
 
 const NotFoundPage = () => (
   <Layout>

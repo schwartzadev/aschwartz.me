@@ -1,12 +1,8 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout' was resolved to '/ho... Remove this comment to see the full error message
 import Layout from '../components/layout'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/stars' was resolved to '/hom... Remove this comment to see the full error message
-import Stars from '../components/stars'
-// @ts-expect-error ts-migrate(6142) FIXME: Module '../components/layout/header' was resolved ... Remove this comment to see the full error message
 import Header from '../components/layout/header'
+import Stars from '../components/stars'
+import { graphql, Link } from 'gatsby'
+import React from 'react'
 
 const Book = ({ data, pageContext }: any) => {
   const bookData = data.airtable.data
