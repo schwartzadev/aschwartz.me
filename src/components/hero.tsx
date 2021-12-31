@@ -9,14 +9,19 @@ const Hero = () => (
       </span>{' '}
       I’m Andrew
     </h1>
-
-    <h2>Full-stack software engineer</h2>
-
+    <h3>Full-stack software engineer</h3>
     <h3>
-      <b>Let’s get in touch:</b>{' '}
-      <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> or{' '}
-      <a href="https://github.com/schwartzadev/">schwartzadev</a> on GitHub.
+      <a href="mailto:andrew@aschwartz.me">andrew@aschwartz.me</a> /{' '}
+      <a href="https://github.com/schwartzadev/">schwartzadev</a>
     </h3>
+
+    <h2>
+      I'm writing something new each month!{' '}
+      <a href="https://smoggy-swamp-cc4.notion.site/December-2021-One-Small-Step-cf3fd181146345fb81228213632a4439">
+        My first piece, for December 2021
+      </a>
+      , is available now.
+    </h2>
   </div>
 )
 
