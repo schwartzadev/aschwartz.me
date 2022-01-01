@@ -2,6 +2,10 @@
 slug: 'latest-news'
 ---
 
+### December, 2021
+
+[Check out my monthly update for December](https://smoggy-swamp-cc4.notion.site/December-2021-One-Small-Step-cf3fd181146345fb81228213632a4439) →
+
 ### August, 2021
 
 I am starting as a [Github Campus Expert](https://githubcampus.expert/) at CU Boulder, connecting
