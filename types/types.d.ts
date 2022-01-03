@@ -30,3 +30,22 @@ interface MarkdownQueryResult {
     html: string
   }
 }
+
+interface NotionMarkdownQueryResult {
+  html: string
+  frontmatter: {
+    status: string
+    title: string
+    publishedDate: {
+      start: string
+    }
+    subtitle: string
+  }
+}
+
+interface Post {
+  notionPage: {
+    id: string
+    childMarkdownRemark: NotionMarkdownQueryResult
+  }
+}

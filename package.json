@@ -37,6 +37,8 @@
     "@types/react-helmet": "^6.1.4",
     "@typescript-eslint/parser": "^5.8.0",
     "eslint": "^8.5.0",
+    "gatsby-plugin-mdx": "^3.4.0",
+    "gatsby-source-notion": "^1.0.5",
     "prettier": "^2.5.1",
     "sass": "^1.45.1",
     "ts-migrate": "^0.1.27",

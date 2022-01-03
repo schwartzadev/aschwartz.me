@@ -4,7 +4,7 @@ slug: 'latest-news'
 
 ### December, 2021
 
-[Check out my monthly update for December](https://smoggy-swamp-cc4.notion.site/December-2021-One-Small-Step-cf3fd181146345fb81228213632a4439) →
+[Check out my monthly update for December](/writing/one-small-step-december-2021) →
 
 ### August, 2021
 
