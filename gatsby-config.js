@@ -82,5 +82,11 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-source-notion',
+      options: {
+        databases: [process.env.GATSBY_WRITING_DATABASE_ID],
+      },
+    },
   ],
 }
