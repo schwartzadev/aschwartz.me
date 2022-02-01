@@ -17,10 +17,15 @@ const Hero = () => (
     </h3>
     <h2>
       I'm writing something new each month!{' '}
-      <Link to="/writing/one-small-step-december-2021">
-        My first piece, for December 2021
-      </Link>
+      <Link to="/writing/round-two-january-2022">My writing from January</Link>
       , is available now.
+      <br />
+      <small>
+        So is my{' '}
+        <Link to="/writing/one-small-step-december-2021">
+          post from December
+        </Link>
+      </small>
     </h2>
   </div>
 )
