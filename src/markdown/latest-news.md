@@ -2,6 +2,10 @@
 slug: 'latest-news'
 ---
 
+### February, 2022
+
+I'm keeping track of the books I read. [Take a look](/books) →
+
 ### December, 2021
 
 [Check out my monthly update for December](/writing/one-small-step-december-2021) →
