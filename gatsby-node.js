@@ -55,6 +55,7 @@ exports.createPages = async function ({ actions, graphql }) {
                 }
                 status: Status
                 title: Title
+                slug: Slug
               }
             }
           }
@@ -69,7 +70,7 @@ exports.createPages = async function ({ actions, graphql }) {
   blogPosts.data.notionDatabase.childrenNotionPage.forEach(page => {
     const { frontmatter } = page.childMarkdownRemark
 
-    const { slugDate, status, title } = frontmatter
+    const { slugDate, status, title, slug } = frontmatter
     const slugify = text => {
       return text
         .toString()
@@ -83,7 +84,9 @@ exports.createPages = async function ({ actions, graphql }) {
 
     if (status === 'Published') {
       createPage({
-        path: `/writing/${slugify(`${title}-${slugDate.start}`)}`,
+        path: `/writing/${
+          slug === '' ? slugify(`${title}-${slugDate.start}`) : slugify(slug)
+        }`,
         component: require.resolve(`./src/templates/post.tsx`),
         context: {
           notionPageId: page.id,
