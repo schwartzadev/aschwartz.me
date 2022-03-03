@@ -32,44 +32,37 @@ exports.createPages = async function ({ actions, graphql }) {
 
   const blogPosts = await graphql(
     `
-      query ($databaseId: String!) {
-        notionDatabase(
-          ref: { eq: $databaseId }
-          childrenNotionPage: {
-            elemMatch: {
-              childMarkdownRemark: {
-                frontmatter: {
-                  Status: { eq: "Published" }
-                  Published_Date: { start: {} }
-                }
-              }
-            }
+      query {
+        allNotion(
+          filter: {
+            properties: { Status: { value: { name: { eq: "Published" } } } }
           }
         ) {
-          childrenNotionPage {
+          nodes {
             id
             childMarkdownRemark {
               frontmatter {
                 slugDate: Published_Date {
                   start(formatString: "MMMM-YYYY")
                 }
-                status: Status
+                status: Status {
+                  id
+                  name
+                }
                 title: Title
+                slug: Slug
               }
             }
           }
         }
       }
-    `,
-    {
-      databaseId: process.env.GATSBY_WRITING_DATABASE_ID,
-    }
+    `
   )
 
-  blogPosts.data.notionDatabase.childrenNotionPage.forEach(page => {
+  blogPosts.data.allNotion.nodes.forEach(page => {
     const { frontmatter } = page.childMarkdownRemark
 
-    const { slugDate, status, title } = frontmatter
+    const { slugDate, status, title, slug } = frontmatter
     const slugify = text => {
       return text
         .toString()
@@ -81,9 +74,12 @@ exports.createPages = async function ({ actions, graphql }) {
         .replace(/-+$/, '')
     }
 
-    if (status === 'Published') {
+    if (status.name === 'Published') {
+      console.log('CREATING PAGE!!!!!')
       createPage({
-        path: `/writing/${slugify(`${title}-${slugDate.start}`)}`,
+        path: `/writing/${
+          slug === '' ? slugify(`${title}-${slugDate.start}`) : slugify(slug)
+        }`,
         component: require.resolve(`./src/templates/post.tsx`),
         context: {
           notionPageId: page.id,

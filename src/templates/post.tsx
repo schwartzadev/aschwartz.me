@@ -8,9 +8,9 @@ interface PostProps {
 }
 
 const Post = ({ data }: PostProps) => {
-  const { notionPage } = data
+  const { notion } = data
 
-  const { childMarkdownRemark } = notionPage
+  const { childMarkdownRemark } = notion
   const { html, frontmatter } = childMarkdownRemark
 
   const {
@@ -63,7 +63,7 @@ const Post = ({ data }: PostProps) => {
 
 export const query = graphql`
   query ($notionPageId: String!) {
-    notionPage(id: { eq: $notionPageId }) {
+    notion(id: { eq: $notionPageId }) {
       id
       childMarkdownRemark {
         html
@@ -71,7 +71,6 @@ export const query = graphql`
           publishedDate: Published_Date {
             start(formatString: "MMMM YYYY")
           }
-          status: Status
           title: Title
           subtitle: Subtitle
         }
