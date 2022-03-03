@@ -83,9 +83,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-notion',
+      resolve: 'gatsby-source-notion-api',
       options: {
-        databases: [process.env.GATSBY_WRITING_DATABASE_ID],
+        token: process.env.GATSBY_NOTION_TOKEN,
+        databaseId: process.env.GATSBY_WRITING_DATABASE_ID,
+        propsToFrontmatter: true,
+        lowerTitleLevel: false,
       },
     },
   ],

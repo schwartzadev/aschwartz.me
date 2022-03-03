@@ -44,7 +44,7 @@ interface NotionMarkdownQueryResult {
 }
 
 interface Post {
-  notionPage: {
+  notion: {
     id: string
     childMarkdownRemark: NotionMarkdownQueryResult
   }
