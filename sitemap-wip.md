@@ -16,6 +16,4 @@ Andrew is a curious student, explorer, and software engineer based in Colorado.
     - PLC
     - JIRA presentation
 
-
-
 I worked with one other developer to build high-performance, high-bandwidth public health infrastructure. I worked to communicate critical insights from a complex dataset to 
