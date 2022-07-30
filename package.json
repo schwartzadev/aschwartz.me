@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css:watch": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --watch",
-    "develop": "npx @11ty/eleventy --serve"
+    "develop": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy && npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css"
   },
   "repository": {
     "type": "git",
