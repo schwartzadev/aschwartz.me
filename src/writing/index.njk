@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: ooh a blog
+---
+
+<h1 class="font-serif text-3xl leading-tight">
+  My latest writing:
+</h1>
+
+<ul class="mt-8">
+{% for post in collections.post %}
+  <li>
+    <a class="underline" href="{{ post.url }}">{{ post.data.title }}</a>
+  </li>
+{% endfor %}
+</ul>
