@@ -4,7 +4,9 @@
   "description": "My personal website, documenting my projects and skills. View it online [here](http://aschwartz.me)!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:watch": "npx tailwindcss -i ./src/css/style.css -o ./_site/css/style.css --watch",
+    "develop": "npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,12 @@
   "homepage": "https://github.com/schwartzadev/aschwartz.me#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.7"
   }
 }

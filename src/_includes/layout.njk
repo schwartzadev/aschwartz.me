@@ -5,12 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <!-- Grab title from the page data and dump it here -->
+  {# <!-- Grab title from the page data and dump it here --> #}
   <title>{{ title }}</title>
+
+  {# fonts #}
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato,Merriweather&display=swap"
+    rel="stylesheet"
+  />
 </head>
-<body>
+<body class="mx-auto max-w-screen-md py-8 px-2 bg-[#1E1E1E] text-tan-100">
   <!-- Grab the content from the page data, dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+
+  <nav class="w-full flex justify-between py-4 pr-8 mb-8 flex-col sm:flex-row">
+    <a class="text-2xl" href="/">Andrew Schwartz</a>
+    <div class="flex gap-6 items-center">
+      <a href="/writing">Writing</a>
+      <a href="/work">Work</a>
+    </div>
+  </nav>
+
   {{ content | safe }}
+
+  <footer class="pt-4">
+    <nav class="py-8 text-center">
+      <h3 class="font-serif text-xl font-bold">Contact Andrew</h3>
+      <div class="flex gap-4 pt-2 pb-6 w-full justify-center">
+        <a class="underline" href="https://www.linkedin.com/in/andrewtschwartz/">LinkedIn</a>
+        <a class="underline" href="andrew@aschwartz.me">Email</a>
+        <a class="underline" href="https://github.com/schwartzadev/">GitHub</a>
+      </div>
+      
+      <p class="opacity-70 text-sm">
+        Made with ❤️ and <a href="https://www.11ty.dev/" target="_blank">11ty</a>
+      </p>
+      <p class="opacity-70 text-sm">
+        © Andrew Schwartz 2022
+      </p>
+    </nav>
+  </footer>
 </body>
 </html>

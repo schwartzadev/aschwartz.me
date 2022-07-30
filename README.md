@@ -5,11 +5,10 @@ View it online [here](http://aschwartz.me)!
 
 ## Development
 
-
 Build: npx @11ty/eleventy
 Serve: npx @11ty/eleventy --serve
 
 ## Deployment
 
-`gatsby` is the code branch, and the site builds from `master`.
-`yarn deploy` will update the `master` branch and push the changes to GitHub.
+> This is by far the easiest way I've figured out to do it. It looks through the outputted HTML files of your site in _site, so keep in mind that you have to generate your CSS after generating the Eleventy site.
+via: https://benborgers.com/posts/eleventy-tailwind
