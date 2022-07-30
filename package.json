@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/schwartzadev/aschwartz.me#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1"
+    "@11ty/eleventy": "^1.0.1",
+    "@tailwindcss/typography": "^0.5.4"
   },
   "dependencies": {
     "autoprefixer": "^10.4.8",
