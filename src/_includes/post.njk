@@ -3,11 +3,18 @@ layout: layout.njk
 ---
 
 <a href="/writing">
-    &#8592; <span>Back</span>
+  &#8592; <span>Writing</span>
 </a>
 
-{# TODO: add title and subtitle here! #}
+<h1 class="text-3xl lg:text-4xl mt-4 font-serif font-bold">{{ title }}</h1>
+<h2 class="text-xl lg:text-2xl mt-2 lg:mt-4">{{ subtitle }}</h1>
 
-<article class="mt-6 prose prose-invert lg:prose-lg prose-a:underline prose-a:underline-offset-2 prose-a:decoration-orange-300">
-    {{ content | safe }}
+<article class="mt-6 prose lg:prose-lg prose-invert prose-a:underline prose-a:underline-offset-2 prose-a:decoration-orange-100 prose-h1:text-2xl lg:prose-h1:text-4xl">
+  {{ content | safe }}
 </article>
+
+<p class="pt-6">
+  <a href="/writing">
+    &#8592; Back to all writing.
+  </a>
+</p>

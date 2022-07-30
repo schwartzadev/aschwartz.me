@@ -3,14 +3,16 @@ layout: layout.njk
 title: ooh a blog
 ---
 
-<h1 class="font-serif text-3xl leading-tight">
-  My latest writing:
+<h1 class="font-serif text-4xl leading-tight">
+  Andrew’s latest writing
 </h1>
 
-<ul class="mt-8">
+<ul class="mt-8 text-xl">
 {% for post in collections.post %}
-  <li>
-    <a class="underline" href="{{ post.url }}">{{ post.data.title }}</a>
+  <li class="mt-2">
+    <a class="" href="{{ post.url }}">
+      <span class="underline underline-offset-2 decoration-orange-300">{{ post.data.title }}</span> →
+    </a>
   </li>
 {% endfor %}
 </ul>
