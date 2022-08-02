@@ -5,9 +5,7 @@ View it online [here](http://aschwartz.me)!
 
 ## Development
 
-Build: npx @11ty/eleventy
-Serve: npx @11ty/eleventy --serve
-
+npm run develop
 npm run css:watch
 
 ## Deployment

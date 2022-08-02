@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: ooh a blog
+title: Andrew Schwartz | Writing
 ---
 
 <h1 class="font-serif text-4xl leading-tight">
@@ -8,7 +8,7 @@ title: ooh a blog
 </h1>
 
 <ul class="mt-8 text-xl">
-{% for post in collections.post %}
+{% for post in collections.post | reverse %}
   <li class="mt-2">
     <a class="" href="{{ post.url }}">
       <span class="underline underline-offset-2 decoration-orange-300">{{ post.data.title }}</span> →
