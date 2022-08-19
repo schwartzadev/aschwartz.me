@@ -10,8 +10,11 @@ title: Writing | Andrew Schwartz
 <ul class="mt-8 text-xl">
 {% for post in collections.post | reverse %}
   <li class="mt-2">
-    <a class="" href="{{ post.url }}">
-      <span class="underline underline-offset-2 decoration-orange-300">{{ post.data.title }}</span> →
+    <a class="inline-block" href="{{ post.url }}">
+      <p>
+        <span class="underline underline-offset-2 decoration-orange-300">{{ post.data.title }}</span>
+      </p>
+      <p class="text-sm text-gray-200">{{ post.data.subtitle }}</p>
     </a>
   </li>
 {% endfor %}
