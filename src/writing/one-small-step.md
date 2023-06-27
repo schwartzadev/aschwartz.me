@@ -7,37 +7,19 @@ tags: post
 
 ## What’s this?
 
-If you know me well, you may know that I occasionally write—typically to pin down fleeting thoughts that I’m afraid I’ll otherwise forget. This writing, until now, has not been something I’ve shared publicly, it’s just been a tool to record my thoughts.
+I occasionally write—typically to pin down fleeting thoughts that I’m afraid I’ll otherwise forget. This writing, until now, has not been something I’ve shared publicly and has served as a way to reflect and to record my thoughts.
 
-Starting now, though, I am embarking on a monthly writing project. I will share something new, each month, on this channel. I don’t want to over-commit, though—my trepidation in taking on a consistent, public writing project like a newsletter stems from a concern about consistency and quality: Will I really be able to publish something worth reading every 30 days? Well, I won’t promise that anything about this project will be worth reading, but I can promise to share something new each month for the coming months.
-
-In this spirit my only rule will be to share _something_ each month. Let’s give it a few months and see how it goes.
+I want to share some of this.
 
 ### Why?
 
-I want to improve my writing. And I believe this project will be a forcing function for my writing’s quality and regularity. Publishing my writing online ~~Throwing my words into the void~~ is different than writing for myself, for school, or for work: I’m not solely aiming to clear my head, get a grade, or communicate an idea. Instead, I’m writing something that I want to put my name on; I’m writing for quality.
+I want to improve my writing. And I believe this project will be a forcing function for my writing’s quality and regularity. Publishing my writing online is different than writing for myself, for school, or for work: I’m not solely aiming to clear my head, get a grade, or communicate an idea. Instead, I’m writing something that I want to put my name on; I’m writing for quality.
 
-In addition to wanting to write _better_, I also want to write _more_. At a minimum, I plan to write a couple hundred words each month and publish those exact words. But I hope this project will be more than that—I hope this will push me to write, revise, and pare thousands of words and many different ideas each month into a distilled piece that I’m proud to share.
+In addition to wanting to write _better_, I hope to write _more_. I hope this project will push me to write, revise, and create pieces that I’m proud to share.
 
-While I’m unsure if I have anything profound or original to add to the deluge of online content, I hope that at a minimum this will serve as a way for the people who care about me (you, most likely!) to peek into my head and look around a little bit. At worst, you ignore these posts. At best, I craft something I like to write, and you like to read.
+While I’m unsure if I have anything profound or original to add to the deluge of online content, I hope that at a minimum this will serve as a way for people to peek into my head and look around a little bit. At worst, you ignore these posts. At best, I craft something I like to write, and you like to read.
 
-This project, I hope, is merely beginning. I want it to be flexible—somewhere between stream-of-consciousness flexible and trapped-into-a-dull-format flexible.
-
-I’m hoping to hit a sweet spot that combines:
-
-- Personal and life updates
-- Things worth sharing (articles, books, photos, etc.)
-- Musings or arguments on a particular concept or issue
-
-...and avoids:
-
-- Milquetoast takes
-- Personal over-sharing
-- Vacation photo dumps.
-
-Am I missing something? Let me know, I want to know what you want to read. I won’t guarantee I’ll take your suggestions, but I would love to hear them. I doubt this will be a [narrowly scoped project](https://www.instagram.com/dogs_ny/), but we’ll have to see where it winds up.
-
-Here we go.
+I want my writing to hit a sweet spot that combines, more than anything, musings or arguments on a particular concept or issue and things worth sharing (articles, books, blogs, etc.).
 
 ## Long walks
 
@@ -65,4 +47,6 @@ So far, Próspera is a collection of three buildings on land smaller than a golf
 
 I’m not bullish on Próspera, but I am curious...if you’re interested in learning more, I’d highly recommend the [thorough writeup in _Astral Codex Ten_](https://astralcodexten.substack.com/p/prospectus-on-prospera) and a less enthusiastic take in _[Bloomberg](https://www.bloomberg.com/news/articles/2021-03-27/prospera-in-honduras-a-private-tech-city-now-open-for-business)_.
 
-See you in January.
+---
+
+_This post was lightly edited in June 2023._
