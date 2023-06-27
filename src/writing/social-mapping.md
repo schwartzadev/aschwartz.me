@@ -9,7 +9,7 @@ In this post, I dive into some of my thinking around social mapping platforms (a
 
 # Insider
 
-From around August, 2021 through November, 2021 I worked on a social media app. The project, insider, was to be a social mapping platform—a more personal way to find new places to explore and travel. I came very close to releasing a MVP of this app, but ultimately chose not to. Here’s why.
+From around August 2021 through November 2021 I worked on a social media app. The project, insider, was to be a social mapping platform—a more personal way to find new places to explore and travel. I came very close to releasing a MVP of this app, but ultimately chose not to. Here’s why.
 
 ## The premise
 
@@ -23,17 +23,17 @@ In theory there’s an algorithmic approach that could resolve lots of these pro
 
 ## The space
 
-Yelp is obviously a huge player in this arena. In fact, the insider MVP leveraged Yelp’s API and some creative querying and caching strategies to power the business data records on the backend. But it’s worth considering why Yelp falls short:
+Yelp is obviously a huge player in this arena. In fact, the insider MVP leveraged Yelp’s API and some creative querying and caching strategies to power the business data records on the backend. But it’s worth considering why Yelp falls short.
 
-There are lots of platforms out there that aim to supplant algorithms in place recommendations, like [Welcome](https://welco.me/), [Superlocal](https://pass.superlocal.com/), [Noted](https://www.getnoted.app/), and [Pao](https://www.thepaoapp.com/). I spoke with someone recently who’s looking to add another company to this list.
+There are lots of platforms out there that aim to supplant algorithms in place recommendations, like [Welcome](https://welco.me/), Superlocal, Noted, and Pao.
 
-But I don’t think any of these apps will succeed—and neither will big players like Yelp and Google Maps. Because taste is tricky, it’s unique, and it’s extremely hard to replicate.
+In February 2022, I wrote that I didn't think “any of these apps will succeed—and neither will big players like Yelp and Google Maps.” This, of course, remains to be seen. But as of June 2023, three of these four platforms no longer exist. Why? Because **taste is tricky, it’s unique, and it’s extremely hard to replicate**.
 
 Spotify is a good counterexample to this claim: by and large, it does a pretty good job at recommending music that you might like. But the music domain and the physical places domains are more different than they are alike. On any day, Spotify users may listen to dozens of songs; at most, you’ll visit only a handful of places. Spotify has lots of metadata (or “item features” in recommender system parlance) on each track, including BPM, genres, artists, record labels, albums, collaborating artists, and so on.
 
-Places have lots of features, too, but they’re much harder to capture: what is a cafe’s vibe? What is this bar’s energy? How did this restaurant smell? What was the lighting like in this store? Unless (until?) we can develop a system that captures this degree of nuance—namely, the things that we like about a place in an accurate, multivariate fashion, I doubt we’ll wind up with a great recommendation system for places.
+Places have lots of features, too, but they’re much harder to capture: What is a cafe’s vibe? What is this bar’s energy? How did that restaurant smell? What was the lighting like in this store? Unless (or until?) we can develop a system that captures this degree of nuance—namely, the subtle, intangible things that we like about a place in an accurate, multivariate fashion, I doubt we’ll wind up with a great recommendation system for places.
 
-### Trust
+### Trust CONTINUE REVIEW HERE
 
 Part of what makes this tricky is that one of the core selling points around these local social platforms is trust. The pitch goes, “you can trust these recommendations more than Google Maps because...” There’s always a reason.
 
@@ -83,3 +83,8 @@ I want to leave you with this excellent quote from Ira Glass. It’s something t
 > I took longer to figure out how to do this than anyone I’ve ever met. It takes awhile. It’s gonna take you a while. It’s normal to take a while. You just have to fight your way through that.
 
 —[Ira Glass](https://jamesclear.com/ira-glass-failure)
+
+
+---
+
+Lightly edited in June 2023 to bring the content up to date.
