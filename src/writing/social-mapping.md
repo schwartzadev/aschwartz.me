@@ -33,13 +33,15 @@ Spotify is a good counterexample to this claim: by and large, it does a pretty g
 
 Places have lots of features, too, but they’re much harder to capture: What is a cafe’s vibe? What is this bar’s energy? How did that restaurant smell? What was the lighting like in this store? Unless (or until?) we can develop a system that captures this degree of nuance—namely, the subtle, intangible things that we like about a place in an accurate, multivariate fashion, I doubt we’ll wind up with a great recommendation system for places.
 
-### Trust CONTINUE REVIEW HERE
+### Trust CONTINUE
 
 Part of what makes this tricky is that one of the core selling points around these local social platforms is trust. The pitch goes, “you can trust these recommendations more than Google Maps because...” There’s always a reason.
 
-But the trust inherent in these platforms, I believe, often comes from an extremely low reward for gaming a nascent platform. If you as a business owner make an undifferentiated product in a low-margin marketplace (think: Amazon), you likely have a high reward for gaming the trust in the system. The reward from artificially increasing your ratings or [otherwise engaging in untrustworthy behavior](https://www.wired.com/story/amazon-failed-to-protect-your-data-investigation/) is not insignificant.
+But the trust inherent in these platforms, I believe, often comes from an extremely low reward for gaming a nascent platform. If you as a business owner make an undifferentiated product in a low-margin marketplace (think: Amazon), you likely have a high reward for gaming the trust in the system. The reward from artificially increasing your ratings or [otherwise engaging in untrustworthy behavior](https://www.wired.com/story/amazon-failed-to-protect-your-data-investigation/) is significant.
 
 On smaller platforms, the reward is comparatively lower—the impact of your inflated ratings is commensurately smaller. So it’s natural for smaller platforms to be more trustworthy.
+
+This is to say, **the new platform likely isn't doing anything different, it's just new**.
 
 The relevant question, then, is “_What can nascent platforms do to maintain trust as they scale?_” And I’m not sure there’s much they can do—bad actors will go to further lengths to exploit trust as platforms grow and the relative reward increases.
 
@@ -68,6 +70,8 @@ Indeed, the very first source The Crypto Syllabus suggests is a [Bank of America
 
 I want to add a disclaimer about The Crypto Syllabus, though. It’s not clear who writes for the organization or who funds it. The Center for the Advancement of Infrastructural Imagination (CAII) supports this work, though I’m not convinced why I ought to trust CAII more than any other person in this space. Evgeny Morozov is [clearly involved](https://the-crypto-syllabus.com/about-us/).
 
+---
+
 I want to leave you with this excellent quote from Ira Glass. It’s something that describes my current approach to writing and my learnings through coding. Here’s the quote in full:
 
 > Nobody tells this to people who are beginners, and I really wish somebody had told this to me.
@@ -87,4 +91,4 @@ I want to leave you with this excellent quote from Ira Glass. It’s something t
 
 ---
 
-Lightly edited in June 2023 to bring the content up to date.
+_This post was lightly edited in June 2023 to bring the content up to date._
