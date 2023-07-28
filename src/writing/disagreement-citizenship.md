@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: Disagreement and citizenship, collecting and collections
-subtitle: TKTKTK
+subtitle: What makes politics work
 tags: post
 ---
 
