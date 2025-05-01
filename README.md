@@ -10,4 +10,4 @@ pnpm run css:watch
 
 ## Deployment
 
-pnpm run build
+The site is deployed on Netlify.
