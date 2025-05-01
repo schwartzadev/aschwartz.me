@@ -5,9 +5,9 @@ View it online [here](http://aschwartz.me)!
 
 ## Development
 
-npm run develop
-npm run css:watch
+pnpm run develop
+pnpm run css:watch
 
 ## Deployment
 
-npm run build
+pnpm run build

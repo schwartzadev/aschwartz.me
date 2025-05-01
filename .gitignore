@@ -141,3 +141,5 @@ dist
 ### Eleventy
 
 _site/*
+
+.DS_Store
