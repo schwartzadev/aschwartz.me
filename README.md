@@ -5,8 +5,10 @@ View it online [here](http://aschwartz.me)!
 
 ## Development
 
-pnpm run develop
-pnpm run css:watch
+npm run develop
+npm run css:watch
+
+Note: migration to pnpm caused issues with Netlify and was reversed.
 
 ## Deployment
 
